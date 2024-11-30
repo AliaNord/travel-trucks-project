@@ -1,0 +1,18 @@
+.options {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.option {
+    padding: 12px 18px;
+    border-radius: 100px;
+    background: var(--Badges);
+    mix-blend-mode: multiply;
+}
+.optionText {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}

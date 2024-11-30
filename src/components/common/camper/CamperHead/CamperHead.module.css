@@ -1,7 +1,4 @@
-.head {
-    display: flex;
-    justify-content: space-between;
-}
+
 .name {
     color: var(--main-color);
     font-size: 24px;
@@ -11,16 +8,10 @@
 .priceAndBtn {
     display: flex;
 }
-.price {
-    color: var(--main-color);
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.3;
-}
+
 .reviewsAndLocation {
     display: flex;
     gap: 16px;
-    margin-bottom: 24px;
 }
 .reviewsContainer {
     display: flex;

@@ -1,0 +1,34 @@
+.main {
+    padding: 48px 64px;
+}
+.descr {
+    margin: 28px 0 36px;
+}
+.navDetails {
+    display: flex;
+    gap: 40px;
+    border-bottom: 1px solid var(--Gray-light);
+    padding: 24px 0;
+    margin-bottom: 44px;
+}
+.link {
+    position: relative;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.active::after {
+    content: "";
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--Button);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

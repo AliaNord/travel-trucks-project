@@ -1,0 +1,6 @@
+.price {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+}

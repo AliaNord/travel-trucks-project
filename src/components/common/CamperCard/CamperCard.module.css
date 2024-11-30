@@ -10,6 +10,10 @@
     width: 292px;
     height: 320px;
 }
+.head {
+    display: flex;
+    justify-content: space-between;
+}
 .cardContainer {
     display: flex;
     gap: 12px;
@@ -33,44 +37,8 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 24px;
+    margin: 24px 0;
 }
-.options {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-}
-.option {
-    padding: 12px 18px;
-    border-radius: 100px;
-    background: var(--Badges);
-    mix-blend-mode: multiply;
-}
-.optionText {
-    color: var(--main-color);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-}
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 173px;
-    height: 56px;
-    border-radius: 200px;
-    background-color: var(--Button);
-    color: var(--White);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: -0.08px;
-}
-.btn:hover, .btn:focus, .btn:active {
-    background-color: var(--Button-Hover) ;
-}
-
 .favorite {
     display: block;
     position: relative;

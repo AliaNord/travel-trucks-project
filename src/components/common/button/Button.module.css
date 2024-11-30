@@ -1,0 +1,17 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 173px;
+    height: 56px;
+    border-radius: 200px;
+    background-color: var(--Button);
+    color: var(--White);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.08px;
+}
+.btn:hover, .btn:focus, .btn:active {
+    background-color: var(--Button-Hover) ;
+}

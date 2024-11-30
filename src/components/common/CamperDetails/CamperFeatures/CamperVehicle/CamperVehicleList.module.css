@@ -1,0 +1,10 @@
+.list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+}
