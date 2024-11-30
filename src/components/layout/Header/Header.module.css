@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 64px;
+    border-bottom: 1px solid var(--Badges);
+    background-color: var(--Inputs);
+}
+.invisible {
+    width: 136px;
+    height: 16px;
+}

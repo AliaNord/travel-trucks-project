@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-VariableFont_opsz\,wght.ttf') format('ttf');
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+:root {
+    --Gray-light: #DADDE1;
+    --main-color: #101828;
+    --Inputs: #F7F7F7;
+    --Badges: #F2F4F7;
+    --Button-Hover: #D84343;
+    --Button: #E44848;
+    --White: #FFF;
+    --Text: #475467;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
