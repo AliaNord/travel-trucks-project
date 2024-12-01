@@ -3,6 +3,9 @@ import s from "./Sidebar.module.css";
 import equipmentData from "../../../data/equipmentData.json";
 import types from "../../../data/types.json";
 import { useState } from "react";
+import { fetchCampersThunk } from "../../../redux/campers/operations";
+import { useDispatch } from "react-redux";
+import { setFilters } from "../../../redux/campers/slice";
 
 const locations = [
   "Kyiv, Ukraine",
@@ -18,6 +21,10 @@ const Sidebar = () => {
   const [inputValue, setInputValue] = useState("");
   const [filteredLocations, setFilteredLocations] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [selectedForm, setSelectedForm] = useState("");
+  const [selectedEquipment, setSelectedEquipment] = useState([]);
+
+  const dispatch = useDispatch();
 
   const handleInputChange = (e) => {
     const value = e.target.value;
@@ -39,9 +46,33 @@ const Sidebar = () => {
     setShowDropdown(false);
   };
 
+  const handleFormChange = (form) => {
+    setSelectedForm(form);
+  };
+  const handleEquipmentChange = (equipment) => {
+    setSelectedEquipment((prev) =>
+      prev.includes(equipment)
+        ? prev.filter((item) => item !== equipment)
+        : [...prev, equipment]
+    );
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const filters = {
+      location: inputValue,
+      form: selectedForm,
+      equipment: selectedEquipment,
+      page: 1,
+      limit: 4,
+    };
+    dispatch(setFilters(filters));
+    dispatch(fetchCampersThunk({ page: 1, limit: 4, ...filters }));
+  };
+
   return (
     <aside className={s.aside}>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className={s.locationContainer}>
           <p className={s.locationName}>Location</p>
           <label className={s.label}>
@@ -74,7 +105,13 @@ const Sidebar = () => {
           {equipmentData.map((item) => (
             <li key={item.equipment} className={s.listItem}>
               <label className={s.equipmentLabel}>
-                <input type="checkbox" name="" className={s.checkbox} />
+                <input
+                  type="checkbox"
+                  name=""
+                  className={s.checkbox}
+                  onChange={() => handleEquipmentChange(item.equipment)}
+                  checked={selectedEquipment.includes(item.equipment)}
+                />
                 <div className={s.customCheckbox}>
                   <SvgIcon
                     id={item.icon_id}
@@ -96,7 +133,13 @@ const Sidebar = () => {
           {types.map((item) => (
             <li key={item.form} className={s.formListItem}>
               <label className={s.equipmentLabel}>
-                <input type="radio" name="form" className={s.checkbox} />
+                <input
+                  type="radio"
+                  name="form"
+                  className={s.checkbox}
+                  onChange={() => handleFormChange(item.form)}
+                  checked={selectedForm === item.form}
+                />
                 <div className={s.customCheckbox}>
                   <SvgIcon
                     id={item.icon_id}

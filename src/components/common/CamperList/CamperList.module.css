@@ -1,5 +1,39 @@
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.loaderContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
 .ul {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    max-width: 888px;
+}
+.btn {
+    width: 145px;
+    height: 56px;
+    border-radius: 200px;
+    border: 1px solid var(--Gray-light);
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.08px;
+    background-color: var(--White);
+    align-self: center;
+    margin-top: 40px;
 }

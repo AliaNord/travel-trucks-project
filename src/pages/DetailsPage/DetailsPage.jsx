@@ -27,21 +27,23 @@ const DetailsPage = () => {
   }
   return (
     <main className={s.main}>
-      <CamperHead item={camper} />
-      <CamperPrice item={camper} />
-      <CamperGallery gallery={camper.gallery} />
-      <p className={s.descr}>{camper.description}</p>
-      <div className={s.navDetails}>
-        <NavLink to="features" className={buildLinkClass}>
-          Features
-        </NavLink>
-        <NavLink to="reviews" className={buildLinkClass}>
-          Reviews
-        </NavLink>
-      </div>
-      <div className={s.container}>
-        <Outlet />
-        <BookForm />
+      <div className={s.mainContainer}>
+        <CamperHead item={camper} />
+        <CamperPrice item={camper} />
+        <CamperGallery gallery={camper.gallery} />
+        <p className={s.descr}>{camper.description}</p>
+        <div className={s.navDetails}>
+          <NavLink to="features" className={buildLinkClass}>
+            Features
+          </NavLink>
+          <NavLink to="reviews" className={buildLinkClass}>
+            Reviews
+          </NavLink>
+        </div>
+        <div className={s.container}>
+          <Outlet />
+          <BookForm />
+        </div>
       </div>
       <Toaster />
     </main>

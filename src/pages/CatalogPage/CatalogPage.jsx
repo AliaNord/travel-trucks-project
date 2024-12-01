@@ -5,8 +5,10 @@ import s from "./CatalogPage.module.css";
 const CatalogPage = () => {
   return (
     <main className={s.main}>
-      <Sidebar />
-      <CamperList />
+      <div className={s.mainContainer}>
+        <Sidebar />
+        <CamperList />
+      </div>
     </main>
   );
 };

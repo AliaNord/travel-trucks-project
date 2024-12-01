@@ -1,4 +1,9 @@
 .main {
-    display: flex;
     margin-top: 48px;
+    margin-bottom: 52px;
+}
+.mainContainer {
+    display: flex;
+    max-width: 1391px;
+    margin: 0 auto;
 }
