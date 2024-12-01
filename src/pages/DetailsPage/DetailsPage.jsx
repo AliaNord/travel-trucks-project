@@ -28,8 +28,10 @@ const DetailsPage = () => {
   return (
     <main className={s.main}>
       <div className={s.mainContainer}>
-        <CamperHead item={camper} />
-        <CamperPrice item={camper} />
+        <div className={s.headContainer}>
+          <CamperHead item={camper} />
+          <CamperPrice item={camper} />
+        </div>
         <CamperGallery gallery={camper.gallery} />
         <p className={s.descr}>{camper.description}</p>
         <div className={s.navDetails}>

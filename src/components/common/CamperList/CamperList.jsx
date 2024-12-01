@@ -6,7 +6,7 @@ import {
   selectIsLoading,
   selectSelectedFilters,
 } from "../../../redux/campers/selectors";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { fetchCampersThunk } from "../../../redux/campers/operations";
 import CamperCard from "../CamperCard/CamperCard";
 import s from "./CamperList.module.css";
@@ -14,6 +14,7 @@ import Loader from "../../Loader/Loader";
 import { setCurrentPage } from "../../../redux/campers/slice";
 
 const CamperList = () => {
+  const hasFetched = useRef(false);
   const data = useSelector(selectCampers);
   const isLoading = useSelector(selectIsLoading);
   const hasMore = useSelector(selectHasMore);
@@ -22,7 +23,8 @@ const CamperList = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!data.length) {
+    if (!hasFetched.current && !data.length) {
+      hasFetched.current = true;
       dispatch(fetchCampersThunk({ page: 1, limit: 4, ...filters }));
     }
   }, [dispatch, data.length, filters]);

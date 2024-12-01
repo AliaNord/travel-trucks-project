@@ -67,6 +67,7 @@ const Sidebar = () => {
       limit: 4,
     };
     dispatch(setFilters(filters));
+    console.log("handleSubmit Sidebar");
     dispatch(fetchCampersThunk({ page: 1, limit: 4, ...filters }));
   };
 
@@ -82,6 +83,12 @@ const Sidebar = () => {
               placeholder="City"
               value={inputValue}
               onChange={handleInputChange}
+            />
+            <SvgIcon
+              id="icon-Map"
+              width="20"
+              height="20"
+              className={s.inputSvg}
             />
             {showDropdown && filteredLocations.length > 0 && (
               <ul className={s.dropdown}>

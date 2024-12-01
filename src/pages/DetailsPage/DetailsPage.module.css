@@ -5,6 +5,11 @@
     max-width: 1312px;
     margin: 0 auto;
 }
+.headContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 .descr {
     margin: 28px 0 36px;
 }

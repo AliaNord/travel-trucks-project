@@ -6,6 +6,7 @@ export const selectIsLoading = (state) => state.campers.loading;
 export const selectCurrentPage = (state) => state.campers.currentPage;
 export const selectHasMore = (state) => state.campers.hasMore;
 export const selectPage = (state) => state.campers.page;
+export const selectFavoriteCampers = (state) => state.campers.favoriteCampers;
 
 const selectFilters = (state) => state.campers;
 export const selectSelectedFilters = createSelector(

@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { api } from "../../services/api";
 import formMapping from "../../data/forms.json";
+import toast from "react-hot-toast";
 
 export const fetchCampersThunk = createAsyncThunk(
   "fetchCampers",
@@ -37,9 +38,15 @@ export const fetchCampersThunk = createAsyncThunk(
           }
         });
       }
-      const res = await api.get("campers", { params });
+      const res = await api.get("campers", {
+        params,
+      }); // Can't fixed Error 404 :(
       return res.data;
     } catch (error) {
+      if (error.response && error.response.status === 404) {
+        toast.error("No results were found for your request.");
+        return thunkApi.rejectWithValue({ items: [] });
+      }
       return thunkApi.rejectWithValue(error.message);
     }
   }
