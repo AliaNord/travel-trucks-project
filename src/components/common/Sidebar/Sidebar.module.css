@@ -1,0 +1,131 @@
+.aside {
+    width: 360px;
+    padding: 0 64px;
+}
+.label {
+    display: inline-block;
+    position: relative;
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 48px;
+    background-color: var(--White);
+    border: 1px solid var(--Gray-light);
+    border-radius: 12px;
+    z-index: 10;
+}
+.dropdownItem {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+.locationName {
+    color: var(--Gray);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+.locationInput {
+    width: 292px;
+    height: 30px;
+    padding: 18px 20px 18px 48px;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 12px;
+    background-color: var(--Inputs);
+    border: none;
+}
+.locationInput::placeholder {
+    color: var(--Gray);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.filtersText {
+    color: var(--Text);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+.h3 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2; 
+}
+.line {
+    height: 1px;
+    background-color: var(--Gray-light);
+    margin: 24px 0;
+}
+.equipmentList {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 12px;
+    margin-bottom: 32px;
+}
+.listItem {
+    width: 112px;
+    height: 96px;
+}
+.equipmentLabel {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.equipmentLabel .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.equipmentLabel .checkbox:checked ~ .customCheckbox  {
+    border: 1px solid var(--Button);
+}
+.customCheckbox {
+    width: 110px;
+    height: 96px;
+    border: 1px solid var(--Gray-light);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.text {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 173px;
+    height: 56px;
+    border-radius: 200px;
+    background-color: var(--Button);
+    color: var(--White);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.08px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover, .btn:focus, .btn:active {
+    background-color: var(--Button-Hover) ;
+}

@@ -1,0 +1,57 @@
+[
+    {
+      "equipment": "AC",
+      "icon_id": "icon-wind",
+      "fill": "#101828",
+      "stroke": "none"
+    },
+    {
+      "equipment": "Bathroom",
+      "icon_id": "icon-shower",
+      "fill": "#101828",
+      "stroke": "none"
+    },
+    {
+      "equipment": "Kitchen",
+      "icon_id": "icon-kitchen",
+      "fill": "#101828",
+      "stroke": "none"
+    },
+    {
+      "equipment": "TV",
+      "icon_id": "icon-tv",
+      "fill": "#101828",
+      "stroke": "none"
+    },
+    {
+      "equipment": "Radio",
+      "icon_id": "icon-radio",
+      "fill": "#101828",
+      "stroke": "none"
+    },
+    {
+      "equipment": "Refrigerator",
+      "icon_id": "icon-fridge",
+      "fill": "#101828",
+      "stroke": "none"
+    },
+    {
+      "equipment": "Microwave",
+      "icon_id": "icon-microwave",
+      "fill": "none",
+      "stroke": "#101828"
+    },
+    {
+      "equipment": "Gas",
+      "icon_id": "icon-gas-stove",
+      "fill": "none",
+      "stroke": "#101828"
+    },
+    {
+      "equipment": "Water",
+      "icon_id": "icon-water",
+      "fill": "none",
+      "stroke": "#101828"
+    }
+  ]
+  

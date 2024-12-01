@@ -1,0 +1,14 @@
+[
+    {
+      "form": "Van",
+      "icon_id": "icon-grid-1x2"
+    },
+    {
+      "form": "Fully Integrated",
+      "icon_id": "icon-grid-2x2"
+    },
+    {
+      "form": "Alcove",
+      "icon_id": "icon-grid-3x3"
+    }
+  ]
