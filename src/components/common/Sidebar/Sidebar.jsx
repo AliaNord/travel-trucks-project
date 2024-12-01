@@ -67,7 +67,6 @@ const Sidebar = () => {
       limit: 4,
     };
     dispatch(setFilters(filters));
-    console.log("handleSubmit Sidebar");
     dispatch(fetchCampersThunk({ page: 1, limit: 4, ...filters }));
   };
 

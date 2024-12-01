@@ -56,6 +56,9 @@ const CamperList = () => {
             Load More
           </button>
         )}
+        {!hasMore && !isLoading && (
+          <p className={s.noMore}>There&apos;s nothing more...</p> // Добавляем параграф здесь
+        )}
       </section>
     </>
   );
