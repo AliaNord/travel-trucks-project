@@ -10,6 +10,10 @@
 - Ability to book a camper through a contact form (providing name, email, and desired booking date).
 - A page with detailed information about the selected camper (features, reviews).
 
+## Live Page
+
+[TravelTrucks - Website](https://travel-trucks-project-amber.vercel.app/)
+
 ## Technologies
 
 The project uses the following technologies and tools:
@@ -62,8 +66,11 @@ Once the project is running, the following steps guide you through its use:
 ## Screenshots
 
     ![TravelTrucks Homepage](./src/assets/screenshots/preview1.png)
+
     ![TravelTrucks Catalog](./src/assets/screenshots/preview2.png)
+
     ![TravelTrucks Details](./src/assets/screenshots/preview3.png)
+
     ![TravelTrucks Features](./src/assets/screenshots/preview4.png)
 
 ## Author
