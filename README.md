@@ -65,13 +65,13 @@ Once the project is running, the following steps guide you through its use:
 
 ## Screenshots
 
-    ![TravelTrucks Homepage](./src/assets/screenshots/preview1.png)
+![TravelTrucks Homepage](./src/assets/screenshots/preview1.png)
 
-    ![TravelTrucks Catalog](./src/assets/screenshots/preview2.png)
+![TravelTrucks Catalog](./src/assets/screenshots/preview2.png)
 
-    ![TravelTrucks Details](./src/assets/screenshots/preview3.png)
+![TravelTrucks Features ](./src/assets/screenshots/preview3.png)
 
-    ![TravelTrucks Features](./src/assets/screenshots/preview4.png)
+![TravelTrucks Details](./src/assets/screenshots/preview4.png)
 
 ## Author
 
